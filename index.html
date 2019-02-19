@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">    
-    <title>AcamicaWiki</title>    
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">    
+    <meta charset="utf-8">
+    <title>AcamicaWiki</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
 </head>
 <body>
     <!--Barra de navegacion lateral-->
-    <nav>
-        <ul>
-            <li><a href="">HTML</a></li>
-            <li><a href="css.html">CSS</a></li>
-            <li><a href="git.html">Git</a></li>
-        </ul>
-    </nav>
-    
-    <!--Barra de búsqueda a implementar funcionalidad-->
-    <form action="ejecutar-la-busqueda" method="POST">
-        <div>
+    <aside>
+        <div class="logo">
+            <img src="http://lorempixel.com/400/200/">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="git.html">GIT</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <div class="principal">
+        <!--Barra de búsqueda a implementar funcionalidad-->
+    <form class="buscador" action="ejecutar-la-busqueda" method="POST">
+        <div class= "barra">
             <input type="search" id="busqueda" />
             <button type="submit">Buscar</button>
         </div>
-     </form>
+    </form>
      <!--Titulo y descripcion-->
-   <div> 
+   <div class="descripcion">
        <h1>HTML: Lenguaje de marcado de hipertexto</h1>
     <p>Qué es HTML: es un lenguaje semántico, de texto plano, que da orden y estructura al contenido de un sitio web. Tiene una estructura lógica que se debe respetar para que no exista error y pueda ser interpretado de manera correcta por la máquina. <br>
 
@@ -32,10 +39,10 @@
              El tag Head contiene tags vitales como el título de la página, los vínculos a los documentos que contienen el diseño y el comportamiento, entre otros.
             <br>
             ¿Cómo se escribe una etiqueta?: &lt;inicio&gt; Contenido &lt;/fin&gt; (Sin embargo hay etiquetas que no se cierran)
-            </div>
-   
+    </div>
+
     <!--Subnavegacion-->
-    <nav>
+    <nav class="indice">
         <h2>Indice</h2>
         <ul>
             <li><a href="#doctype">!Doctype</a></li>
@@ -56,11 +63,13 @@
             <li><a href="#video">Video</a></li>
         </ul>
     </nav>
+
     <!--Contenido-->
+    <div class="contenido">
         <p id="doctype">&lt;!DOCTYPE&gt; Debe ser lo primero en el documento, antes del tag html</p>
 
         <p id="html">&lt;html&gt; es el contenedor de todos los demas tags, le dice al navegador que es un documento html</p>
-        
+
         <p id="meta">&lt;meta&gt; el concepto de metadatos se refiere a aquellos datos que hablan de los datos, es decir,
              describen el contenido de los archivos o la información de los mismos. <br>
              Se suele usar para dar información acerca del autor de la página,descripción de la página, última modificación,palabras clave(keywords), etc
@@ -104,7 +113,9 @@
              debe incluir dentro un src con la referencia de la imagen, </p>
 
         <p id="video">&lt;video&gt;</p>
-        
-        
+
+    </div>
+
+    </div>
 </body>
 </html>

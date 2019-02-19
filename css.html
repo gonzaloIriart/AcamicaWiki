@@ -3,27 +3,38 @@
 <head>
     <meta charset="utf-8">    
     <title>AcamicaWiki</title>    
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">    
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">    
 </head>
 <body>
     <!--Barra de navegacion lateral-->
-    <nav>
-        <ul>
-            <li><a href="index.html">HTML</a></li>
-            <li><a href="">CSS</a></li>
-            <li><a href="git.html">Git</a></li>
-        </ul>
-    </nav>
-    <!--Barra de búsqueda a implementar funcionalidad-->
-    <form action="ejecutar-la-busqueda" method="POST">
-        <div>
+    <aside>
+        <div class="logo">
+            <img src="http://lorempixel.com/400/200/">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="git.html">Git</a></li>
+            </ul>
+        </nav>
+    </aside>    
+    
+    <div class="principal">
+        <!--Barra de búsqueda a implementar funcionalidad-->
+    <form class="buscador" action="ejecutar-la-busqueda" method="POST">
+        <div class= "barra">
             <input type="search" id="busqueda" />
             <button type="submit">Buscar</button>
         </div>
-     </form>
-    <!--Titulo y descripcion-->
-    <h1>CSS</h1>
-    <!--Subnavegacion-->
-    <!--Contenido-->
+    </form>
+     <!--Titulo y descripcion-->
+   <div class="descripcion"> 
+       <h1>Css</h1>    
+        <!--Subnavegacion-->
+        <!--Contenido-->
+    </div>
+        
+    </div>        
 </body>
 </html>
