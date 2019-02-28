@@ -9,46 +9,36 @@
 </head>
 
 <body>
-    <!--Barra de navegacion lateral-->
 
-    <aside>
-        <div class="logo">
-            <img src="img/path4789.png">
-        </div>
-        <nav class="menu">
+    <nav class="menu">
             <ul>
-                <li><a href="index.html">HTML</a></li>
+                <li><a class="active" href="index.html">HTML</a></li>
                 <li><a href="css.html">CSS</a></li>
                 <li><a href="git.html">GIT</a></li>
+                <li><a href="#">extra 1</a></li>
+                <li><a href="#">extra 2</a></li>
+                <li><a href="#">extra 3</a></li>
+                <li><a href="#">extra 4</a></li>
+                <li><a href="#">extra 5</a></li>
+                <li><a href="#">extra 6</a></li>
+                <li><a href="#">extra 7</a></li>
             </ul>
+            <form class="buscador" action="ejecutar-la-busqueda" method="POST">
+                <div class="barra">
+                    <input type="search" id="busqueda" />
+                    <button type="submit">Buscar</button>
+                </div>
+            </form>
         </nav>
-    </aside>
-
-    <div class="principal">
         <!--Barra de búsqueda a implementar funcionalidad-->
-        <form class="buscador" action="ejecutar-la-busqueda" method="POST">
-            <div class="barra">
-                <input type="search" id="busqueda" />
-                <button type="submit">Buscar</button>
-            </div>
-        </form>
         <!--Titulo y descripcion-->
-        <div class="box descripcion">
-            <h1>HTML: Lenguaje de marcado de hipertexto</h1>
-            <p>
-                Qué es HTML: es un lenguaje semántico, de texto plano, que da orden y estructura al contenido de un sitio web. Tiene una estructura lógica que se debe respetar para que no exista error y pueda ser interpretado de manera correcta por la máquina.
-            </p>
-            <p>
-                Estructura básica de un HTML: <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default">Prueba un ejemplo aquí</a> Una página empieza y termina con los tags &lt;html&gt;
-                y &lt;/html&gt;. Dentro de estos tags se encuentran todos los demas tags. Pero los más básicos son &lt;head&gt;&lt;/head&gt; y &lt;body&gt;&lt;/body&gt;. El tag Head contiene tags vitales como el título de la página, los vínculos a los
-                documentos que contienen el diseño y el comportamiento, entre otros.
-            </p>
-            <p>
-                ¿Cómo se escribe una etiqueta?: &lt;inicio&gt; Contenido &lt;/fin&gt; (Sin embargo hay etiquetas que no se cierran)
-            </p>
+    
+<div class="contenido">
+    <aside> <!--Barra de navegacion lateral-->
+        <div class="logo">
+            <img src="img/logoawiki.png">
         </div>
-
-        <!--Subnavegacion-->
+        
         <nav class="box indice">
             <h2>Indice</h2>
             <ul>
@@ -70,6 +60,27 @@
                 <li><a href="#video">Video</a></li>
             </ul>
         </nav>
+    </aside>
+
+    <div class="principal">
+        
+        <div class="box descripcion">
+            <h1>HTML: Lenguaje de marcado de hipertexto</h1>
+            <p>
+                Qué es HTML: es un lenguaje semántico, de texto plano, que da orden y estructura al contenido de un sitio web. Tiene una estructura lógica que se debe respetar para que no exista error y pueda ser interpretado de manera correcta por la máquina.
+            </p>
+            <p>
+                Estructura básica de un HTML: <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default">Prueba un ejemplo aquí</a> Una página empieza y termina con los tags &lt;html&gt;
+                y &lt;/html&gt;. Dentro de estos tags se encuentran todos los demas tags. Pero los más básicos son &lt;head&gt;&lt;/head&gt; y &lt;body&gt;&lt;/body&gt;. El tag Head contiene tags vitales como el título de la página, los vínculos a los
+                documentos que contienen el diseño y el comportamiento, entre otros.
+            </p>
+            <p>
+                ¿Cómo se escribe una etiqueta?: &lt;inicio&gt; Contenido &lt;/fin&gt; (Sin embargo hay etiquetas que no se cierran)
+            </p>
+        </div>
+
+        <!--Subnavegacion-->
+        
 
         <!--Contenido-->
         <div class="box contenido">
@@ -118,6 +129,7 @@
         </div>
 
     </div>
+</div>
 </body>
 
 </html>

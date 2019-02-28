@@ -1,5 +1,6 @@
 * {
 	margin: 0;
+	box-sizing: border-box;
 	}
 html {
 		background-image: url('../img/noise.jpg');
@@ -9,38 +10,37 @@ p{
 }
 body {
 
-	display: flex;
-	justify-content: space-around;
-	align-items: flex-start;
-	flex-wrap: wrap;
-	margin: 0.5em 1em;
+
 	font-family: 'Open Sans', sans-serif;
 }
-
-aside {
-	padding: 1%;
-	border-radius: 1%;
-	width: 20%;
-	border-style: solid;
-	border-color: #cce490;
-	background-color: #0c907d;
-	height: 100vh;
+.active {
+	background-color: #105b63fd;
+}
+.menu{
+	padding-top: 2em;
+	display: flex;
+	justify-content: space-around;
+	background-color: #63A69F;
 }
 .menu ul {
-	padding: 0;
+	/* padding: 0; */
+	list-style: none; /*C*/
+	margin: 0;/*C*/
+	padding: 0;/*C*/
 }
 
 .menu ul li{
 	background-color: transparent;
 	box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.9);
-	list-style: none;
-	margin: 10px 0px;
+	/* margin:5px 0px; *//*C*/
 	font-family: 'Roboto', sans-serif;
-	font-size: 1.7rem;
-	line-height: 150%;
-	padding-left: 20px;
+	font-size: 1rem;
+	/* line-height: -1; */
+	/* padding-left: 20px; */
 	border-radius: 2%;
 	text-align: center;
+	display: inline-block;/*C*/
+
 }
 
 .menu ul li:hover{
@@ -50,12 +50,15 @@ aside {
 .menu ul li a{
 	text-decoration: none;
 	display: block;
+	color: white;
+	padding:.5em 1em;
+}
+.menu a:hover{
+	background-color: #105b63fd;
 }
 
 .logo img {
-	width: 100%;
-	border-radius: 2%;
-	border: 3px solid #000;
+	width: 50%;
 }
 
 .principal {
@@ -66,11 +69,33 @@ aside {
 }
 
 .buscador{
-	width: 90%;
-	margin: 1.5em 5%;
+	/* width: 90%; */
+	margin: 1.5em 1em;
 	background-color: transparent;
 	display: flex;
 	justify-content: flex-end;
+}
+
+
+.contenido{
+	display: flex; 
+	justify-content: space-around;
+	align-items: flex-start;
+	flex-wrap: wrap; 
+	/* margin: 0.5em 1em; */
+}
+aside {
+	padding: 1%;
+	border-radius: 1%;
+	width: 20%;
+	/* border-style: solid; */
+	/* border-color: #cce490; */
+	background-color: #63A69F;
+	height: 100vh;
+	/* position: fixed; */
+	/* top:0;
+	left: 0; */
+	
 }
 
 .box {
@@ -78,4 +103,10 @@ aside {
 	margin: 1%;
 	padding: 2%;
 	border-radius: 0.5%;
+}
+
+.indice{
+	height: 70%;
+	overflow: scroll;
+	overflow-x: hidden;
 }
