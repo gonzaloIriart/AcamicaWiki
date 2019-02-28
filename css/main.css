@@ -9,18 +9,26 @@ p{
 	margin: 1em 0em;
 }
 body {
-
-
+	color: #fffadcff;
 	font-family: 'Open Sans', sans-serif;
 }
+.link-no-style{
+	text-decoration: none;
+	color: #fffadcff;
+}
+
 .active {
 	background-color: #105b63fd;
 }
 .menu{
-	padding-top: 2em;
+	padding-top: 1em;
+	/* padding-bottom: 1em; */
+	height: 10vh;
 	display: flex;
 	justify-content: space-around;
 	background-color: #63A69F;
+	position: sticky;
+	top:0;
 }
 .menu ul {
 	/* padding: 0; */
@@ -31,7 +39,7 @@ body {
 
 .menu ul li{
 	background-color: transparent;
-	box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.9);
+	box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.5);
 	/* margin:5px 0px; *//*C*/
 	font-family: 'Roboto', sans-serif;
 	font-size: 1rem;
@@ -43,22 +51,24 @@ body {
 
 }
 
-.menu ul li:hover{
-	box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.9);
-}
+/* .menu ul li:hover{
+	box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.5);
+} */
 
 .menu ul li a{
 	text-decoration: none;
 	display: block;
-	color: white;
+	color: #fffadcff;
 	padding:.5em 1em;
+	background-color: transparent;
+	transition: background-color 0.3s;
 }
 .menu a:hover{
 	background-color: #105b63fd;
 }
 
 .logo img {
-	width: 50%;
+	width: 100%;
 }
 
 .principal {
@@ -70,7 +80,7 @@ body {
 
 .buscador{
 	/* width: 90%; */
-	margin: 1.5em 1em;
+	/* margin: 1.5em 1em; */
 	background-color: transparent;
 	display: flex;
 	justify-content: flex-end;
@@ -91,10 +101,11 @@ aside {
 	/* border-style: solid; */
 	/* border-color: #cce490; */
 	background-color: #63A69F;
-	height: 100vh;
+	height: 90vh;
 	/* position: fixed; */
-	/* top:0;
-	left: 0; */
+	position: sticky;
+	top:63px;
+	/*left: 0; */
 	
 }
 
@@ -106,7 +117,13 @@ aside {
 }
 
 .indice{
-	height: 70%;
+	height: 50%;
 	overflow: scroll;
 	overflow-x: hidden;
+}
+.indice ul{
+	list-style-type: none;
+}
+.indice a:hover{
+	text-decoration: antiquewhite underline;
 }
