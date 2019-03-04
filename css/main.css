@@ -17,9 +17,8 @@ body {
 	color: #fffadcff;
 }
 
-.active {
-	background-color: #105b63fd;
-}
+
+
 .menu{
 	padding-top: 1em;
 	/* padding-bottom: 1em; */
@@ -73,9 +72,10 @@ body {
 
 .principal {
 	width: 70%;
-	background-color: #0c907d;
+	/* background-color: #63A69F; */
 	border-style: solid;
-	border-color: #cce490;
+	border-color: #63A69F;
+	color: #105b63fd
 }
 
 .buscador{
@@ -126,4 +126,16 @@ aside {
 }
 .indice a:hover{
 	text-decoration: antiquewhite underline;
+}
+.active {
+	background-color: #105b63fd;
+}
+p>a{
+	color:#105b63fd;
+	transition: all 0.3s;
+}
+p>a:hover{
+	color: white;
+	background-color: #105b63fd;
+
 }
