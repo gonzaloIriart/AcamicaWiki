@@ -9,12 +9,18 @@ html{
 }
 body{
     color: #105b63;
+    margin: 5px; /*agregué esto para que se vieran los bordes y que la página no parezca "infinita"*/
 }
 p,h1,h2,h3{
     margin-bottom: 1em;
 }
 
-/* 
+.content{
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+/*
     COLORES:
     #63A69F >=> Verde Claro de fondo
     #105b63 >=> Verde Oscuro de acento y textos sobre fondos claros
@@ -26,10 +32,10 @@ p,h1,h2,h3{
 Quedan subrayados y se colorean al pasar el puntero para que se entiendan que son enlaces
 */
 p a:hover{
-    transition: all 0.3s;
+  transition: all 0.3s;
 	color: #fffadc;
 	background-color: #105b63;
-	
+
 }
 /* Esta clase esta pensada para el caso que se necesite usar una lista de links en otros lugares y se quiera dar un estilo sencillo, ej. lista de recursos */
 .link-no-style a{
@@ -43,6 +49,14 @@ p a:hover{
     height: 10vh;
     position: sticky;
     top: 0;
+}
+footer{
+  padding: 10px;
+  background-color: #63A69F;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* se aplica flex al contenedor dentro de la cabecera proncipal dejando libre la clase contenedor 95vw para futuros usos */
@@ -92,7 +106,7 @@ p a:hover{
     padding-right: 1%;
     min-height:100vh;
     width: 20vw;
-    
+
 }
 
 
@@ -105,7 +119,7 @@ p a:hover{
 .indice{
 	max-height: 60%;
 	overflow: scroll;
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 .indice ul{
 	list-style-type: none;
@@ -127,6 +141,7 @@ p a:hover{
 .box {
 	box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.3);
 	margin-top: 1%;
+
 	padding: 2%;
 	border-radius: 0.5%;
 }
