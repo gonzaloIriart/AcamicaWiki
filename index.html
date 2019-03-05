@@ -9,55 +9,58 @@
 </head>
 
 <body>
-
-    <nav class="menu">
-            <ul>
-                <li><a class="active" href="index.html">HTML</a></li>
-                <li><a href="css.html">CSS</a></li>
-                <li><a href="git.html">GIT</a></li>
-                <li><a href="#">extra 1</a></li>
-                <li><a href="#">extra 2</a></li>
-                <li><a href="#">extra 3</a></li>
-                <li><a href="#">extra 4</a></li>
-                <li><a href="#">extra 5</a></li>
-                <li><a href="#">extra 6</a></li>
-                <li><a href="#">extra 7</a></li>
-            </ul>
+    <header class="header-principal">
+        <div class="contenedor-95vw">
+            <nav class="menu">
+                <ul>
+                    <li class="active"><a  href="index.html">HTML</a></li>
+                    <li><a href="css.html">CSS</a></li>
+                    <li><a href="git.html">GIT</a></li>
+                    <li><a href="#">extra 1</a></li>
+                    <li><a href="#">extra 2</a></li>
+                    <li><a href="#">extra 3</a></li>
+                    <li><a href="#">extra 4</a></li>
+                    <li><a href="#">extra 5</a></li>
+                    <li><a href="#">extra 6</a></li>
+                    <li><a href="/menu.html">extra 7</a></li>
+                </ul>
+            </nav>
+            <!--Barra de búsqueda a implementar funcionalidad-->
+            <!--Titulo y descripcion-->
             <form class="buscador" action="ejecutar-la-busqueda" method="POST">
                 <div class="barra">
-                    <input type="search" id="busqueda" />
+                    <input type="search" placeholder="Escribí tu busqueda" id="busqueda" />
                     <button type="submit">Buscar</button>
                 </div>
             </form>
-        </nav>
-        <!--Barra de búsqueda a implementar funcionalidad-->
-        <!--Titulo y descripcion-->
-    
+        </div>
+    </header>    
+    <!-- Contiene el aside (panel lateral) y la parte de contenido -->
 <div class="contenido">
-    <aside> <!--Barra de navegacion lateral-->
+    <aside class="navegacion-lateral"> <!--Barra de navegacion lateral-->
         <div class="logo">
             <img src="img/logoawiki.png">
         </div>
         
         <nav class="box indice">
             <h2>Indice</h2>
-            <ul>
-                <li><a class="link-no-style" href="#doctype">!Doctype</a></li>
-                <li><a class="link-no-style" href="#html">html</a> </li>
-                <li><a class="link-no-style" href="#meta">Meta</a></li>
-                <li><a class="link-no-style" href="#div">Secciones</a></li>
-                <li><a class="link-no-style" href="#nav">Nav</a></li>
-                <li><a class="link-no-style" href="#form">Formularios</a></li>
-                <li><a class="link-no-style" href="#head">Head</a></li>
-                <li><a class="link-no-style" href="#header">Header</a></li>
-                <li><a class="link-no-style" href="#titulos">Títulos</a></li>
-                <li><a class="link-no-style" href="#parrafo">Párrafo</a></li>
-                <li><a class="link-no-style" href="#script">Script</a></li>
-                <li><a class="link-no-style" href="#link">Links</a></li>
-                <li><a class="link-no-style" href="#listas">Listas</a></li>
-                <li><a class="link-no-style" href="#comentario">Comentarios</a></li>class="link-no-style" 
-                <li><a class="link-no-style" href="#imagen">Imagenes</a></li>
-                <li><a class="link-no-style" href="#video">Video</a></li>
+            <ul class="link-no-style">
+                <li><a href="#doctype">!Doctype</a></li>
+                <li><a href="#html">html</a> </li>
+                <li><a href="#meta">Meta</a></li>
+                <li><a href="#div">Secciones</a></li>
+                <li><a href="#nav">Nav</a></li>
+                <li><a href="#form">Formularios</a></li>
+                <li><a href="#head">Head</a></li>
+                <li><a href="#header">Header</a></li>
+                <li><a href="#titulos">Títulos</a></li>
+                <li><a href="#parrafo">Párrafo</a></li>
+                <li><a href="#script">Script</a></li>
+                <li><a href="#link">Links</a></li>
+                <li><a href="#listas">Listas</a></li>
+                <li><a href="#comentario">Comentarios</a></li> 
+                <li><a href="#imagen">Imagenes</a></li>
+                <li><a href="#video">Video</a></li>
             </ul>
         </nav>
     </aside>
@@ -83,7 +86,7 @@
         
 
         <!--Contenido-->
-        <div class="box contenido">
+        <div class="box">
             <p id="doctype">&lt;!DOCTYPE&gt; Debe ser lo primero en el documento, antes del tag html</p>
 
             <p id="html">&lt;html&gt; es el contenedor de todos los demas tags, le dice al navegador que es un documento html</p>

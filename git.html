@@ -6,38 +6,66 @@
     <title>AcamicaWiki</title>
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
 </head>
-
 <body>
-    <!--Barra de navegacion lateral-->
-    <aside>
-        <div class="logo">
-            <img src="img/path4789.png">
+     <header class="header-principal">
+        <div class="contenedor-95vw">
+            <nav class="menu">
+                <ul>
+                    <li><a  href="index.html">HTML</a></li>
+                    <li><a href="css.html">CSS</a></li>
+                    <li class="active"><a href="git.html">GIT</a></li>
+                    <li><a href="#">extra 1</a></li>
+                    <li><a href="#">extra 2</a></li>
+                    <li><a href="#">extra 3</a></li>
+                    <li><a href="#">extra 4</a></li>
+                    <li><a href="#">extra 5</a></li>
+                    <li><a href="#">extra 6</a></li>
+                    <li><a href="/menu.html">extra 7</a></li>
+                </ul>
+            </nav>
+            <!--Barra de búsqueda a implementar funcionalidad-->
+            <!--Titulo y descripcion-->
+            <form class="buscador" action="ejecutar-la-busqueda" method="POST">
+                <div class="barra">
+                    <input type="search" placeholder="Escribí tu busqueda" id="busqueda" />
+                    <button type="submit">Buscar</button>
+                </div>
+            </form>
         </div>
-        <nav class="menu">
-            <ul>
-                <li><a href="index.html">HTML</a></li>
-                <li><a href="css.html">CSS</a></li>
-                <li><a href="git.html">Git</a></li>
-            </ul>
-        </nav>
+    </header>    
+    <div class="contenido">
+    <!--Barra de navegacion lateral-->
+    <aside class="navegacion-lateral">
+        <div class="logo">
+            <img src="img/logoawiki.png">
+        </div>
+        <div class="box indice">
+                <h2>Indice</h2>
+                <ul class="link-no-style">
+                    <li><a href="#doctype">Qué es Git</a></li>
+                    <li><a href="#html">Comandos básicos</a> </li>
+                    <li><a href="#meta">Creando repositorios locales</a></li>
+                    <li><a href="#div"> Repositorios remotos</a></li>
+                    <li><a href="#nav">Sincronizar</a></li>
+                    <li><a href="#form">Push</a></li>
+                    <li><a href="#head">Pull</a></li>
+                    <li><a href="#header">Pull request</a></li>
+                    <li><a href="#titulos">Código de colores</a></li>
+                    <li><a href="#parrafo">Pseudo elementos</a></li>
+                    <li><a href="#script">Pseudoclases</a></li>
+                </ul>
+            </div>
     </aside>
 
     <div class="principal">
-        <!--Barra de búsqueda a implementar funcionalidad-->
-        <form class="buscador" action="ejecutar-la-busqueda" method="POST">
-            <div class="barra">
-                <input type="search" id="busqueda" />
-                <button type="submit">Buscar</button>
-            </div>
-        </form>
         <!--Titulo y descripcion-->
-        <div class="descripcion">
+        <div class="box descripcion">
             <h1>Git</h1>
-            <!--Subnavegacion-->
             <!--Contenido-->
         </div>
 
     </div>
+</div>
 </body>
 
 </html>
