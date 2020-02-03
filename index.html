@@ -9,42 +9,42 @@
 </head>
 
 <body>
-    <!--Barra de navegacion lateral-->
-    <aside>
+    <header class="header-principal">
+        <div class="contenedor-95vw">
+            <nav class="menu">
+                <ul>
+                    <li class="active"><a  href="index.html">HTML</a></li>
+                    <li><a href="css.html">CSS</a></li>
+                    <li><a href="git.html">GIT</a></li>
+                    <li><a href="#">extra 1</a></li>
+                    <li><a href="#">extra 2</a></li>
+                    <li><a href="#">extra 3</a></li>
+                    <li><a href="#">extra 4</a></li>
+                    <li><a href="#">extra 5</a></li>
+                    <li><a href="#">extra 6</a></li>
+                    <li><a href="#">extra 7</a></li>
+                </ul>
+            </nav>
+            <!--Barra de búsqueda a implementar funcionalidad-->
+            <!--Titulo y descripcion-->
+            <form class="buscador" action="ejecutar-la-busqueda" method="POST">
+                <div class="barra">
+                    <input type="search" placeholder="Escribí tu busqueda" id="busqueda" />
+                    <button type="submit">Buscar</button>
+                </div>
+            </form>
+        </div>
+    </header>
+    <!-- Contiene el aside (panel lateral) y la parte de contenido -->
+<div class="contenido">
+    <aside class="navegacion-lateral"> <!--Barra de navegacion lateral-->
         <div class="logo">
-            <img src="img/path4789.png">
-        </div>
-        <nav class="menu">
-            <ul>
-                <li><a href="index.html">HTML</a></li>
-                <li><a href="css.html">CSS</a></li>
-                <li><a href="git.html">GIT</a></li>
-            </ul>
-        </nav>
-    </aside>
-
-    <div class="principal">
-        <!--Barra de búsqueda a implementar funcionalidad-->
-        <form class="buscador" action="ejecutar-la-busqueda" method="POST">
-            <div class="barra">
-                <input type="search" id="busqueda" />
-                <button type="submit">Buscar</button>
-            </div>
-        </form>
-        <!--Titulo y descripcion-->
-        <div class="descripcion">
-            <h1>HTML: Lenguaje de marcado de hipertexto</h1>
-            <p>Qué es HTML: es un lenguaje semántico, de texto plano, que da orden y estructura al contenido de un sitio web. Tiene una estructura lógica que se debe respetar para que no exista error y pueda ser interpretado de manera correcta por la máquina.
-                <br> Estructura básica de un HTML: <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default">https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default</a> Una página empieza y termina con los tags &lt;html&gt;
-                y &lt;/html&gt;. Dentro de estos tags se encuentran todos los demas tags. Pero los más básicos son &lt;head&gt;&lt;/head&gt; y &lt;body&gt;&lt;/body&gt;. El tag Head contiene tags vitales como el título de la página, los vínculos a los
-                documentos que contienen el diseño y el comportamiento, entre otros.
-                <br> ¿Cómo se escribe una etiqueta?: &lt;inicio&gt; Contenido &lt;/fin&gt; (Sin embargo hay etiquetas que no se cierran)
+            <img src="img/logoawiki.png">
         </div>
 
-        <!--Subnavegacion-->
-        <nav class="indice">
-            <h2>Indice</h2>
-            <ul>
+        <nav class="box indice">
+          <h2>Indice</h2>
+            <ul class="link-no-style">
                 <li><a href="#doctype">!Doctype</a></li>
                 <li><a href="#html">html</a> </li>
                 <li><a href="#meta">Meta</a></li>
@@ -63,54 +63,127 @@
                 <li><a href="#video">Video</a></li>
             </ul>
         </nav>
+    </aside>
 
+    <div class="principal">
+
+        <div class="box descripcion">
+            <h1>HTML: Lenguaje de marcado de hipertexto</h1>
+            <div class="contenido">
+              <p>
+                Qué es HTML: es un lenguaje semántico, de texto plano, que da orden y estructura al contenido de un sitio web. Tiene una estructura lógica que se debe respetar para que no exista error y pueda ser interpretado de manera correcta por la máquina.
+              </p>
+            </div>
+            <div class="contenido">
+              <p>
+                  Estructura básica de un HTML: <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default">Prueba un ejemplo aquí</a> Una página empieza y termina con los tags &lt;html&gt;
+                  y &lt;/html&gt;. Dentro de estos tags se encuentran todos los demas tags. Pero los más básicos son &lt;head&gt;&lt;/head&gt; y &lt;body&gt;&lt;/body&gt;. El tag Head contiene tags vitales como el título de la página, los vínculos a los
+                  documentos que contienen el diseño y el comportamiento, entre otros.
+              </p>
+            </div>
+
+            <div class="contenido">
+              <p>¿Cómo se escribe una etiqueta?: &lt;inicio&gt; Contenido &lt;/fin&gt; (Sin embargo hay etiquetas que no se cierran)
+              </p>
+            </div>
+        </div>
+        <!--Subnavegacion-->
         <!--Contenido-->
-        <div class="contenido">
-            <p id="doctype">&lt;!DOCTYPE&gt; Debe ser lo primero en el documento, antes del tag html</p>
+        <div class="box">
+            <div class="contenido" id="doctype">
+              <p>&lt;!DOCTYPE&gt; Debe ser lo primero en el documento, antes del tag html</p>
+            </div>
 
-            <p id="html">&lt;html&gt; es el contenedor de todos los demas tags, le dice al navegador que es un documento html</p>
+            <div class="contenido" id="html">
+              <p>&lt;html&gt; es el contenedor de todos los demas tags, le dice al navegador que es un documento html</p>
+            </div>
 
-            <p id="meta">&lt;meta&gt; el concepto de metadatos se refiere a aquellos datos que hablan de los datos, es decir, describen el contenido de los archivos o la información de los mismos. <br> Se suele usar para dar información acerca del autor de la página,descripción
+            <div class="contenido" id="meta">
+              <p>&lt;meta&gt; el concepto de metadatos se refiere a aquellos datos que hablan de los datos, es decir, describen el contenido de los archivos o la información de los mismos. <br> Se suele usar para dar información acerca del autor de la página,descripción
                 de la página, última modificación,palabras clave(keywords), etc
-            </p>
+              </p>
+            </div>
 
-            <p id="div">&lt;div&gt; define una sección o división en el documento HTMl</p>
+            <div class="contenido" id="div">
+              <p>&lt;div&gt; define una sección o división en el documento HTML</p>
+            </div>
 
-            <p>&lt;section&gt; define secciones en un documento como un capitulo, header o footer.
+            <div class="contenido" id="section">
+              <p>&lt;section&gt; define secciones en un documento como un capitulo, header o footer.
                 <a href="https://www.w3.org/TR/html/sections.html#the-section-element" target="_blank">
-                Para mas info sobre este tag</a> </p>
+                Para mas info sobre este tag</a>
+              </p>
+            </div>
 
-            <p id="nav">&lt;nav&gt; se usa para incluir links de navegación</p>
+            <div class="contenido" id="nav">
+              <p>&lt;nav&gt; se usa para incluir links de navegación</p>
+            </div>
 
-            <p id="form">&lt;form&gt; se utiliza para crear formularios en HTML.
-                <a href="https://www.w3schools.com/tags/tag_form.asp" target="_blank">
-                Para mas info sobre este tag</a> <br>Ejemplo<br> &lt;form action="/action_page.php" method="get"&gt;<br> First name: &lt;input type="text" name="fname"&gt;<br> Last name: &lt;input type="text" name="lname"&gt;<br> &lt;input
-                type="submit" value="Submit"&gt;<br> &lt;/form&gt;
+            <div class="contenido" id="form">
+              <p id="form">&lt;form&gt; se utiliza para crear formularios en HTML.
+                  <a href="https://www.w3schools.com/tags/tag_form.asp" target="_blank">
+                    Para mas info sobre este tag</a> <br>Ejemplo<br> &lt;form action="/action_page.php" method="get"&gt;<br> First name: &lt;input type="text" name="fname"&gt;<br> Last name: &lt;input type="text" name="lname"&gt;<br> &lt;input
+                    type="submit" value="Submit"&gt;<br> &lt;/form&gt;
+              </p>
+            </div>
+
+          <div class="contenido" id="head">
+            <p>&lt;head&gt; Cabecera (HEAD) de un documento HTML. La HEAD es la primera de las dos partes en que se estructura un documento HTML. En la HEAD reside información acerca del documento, y generalmente no se ve cuando se navega por él. En la HEAD se pone el elemento lleno &lt;TITLE&gt; que es una breve descripción que identifica la página.
+              Dentro de ésta etiqueta es común encontrar las referencias a scripts y los archivos de estilos de CSS.
             </p>
+          </div>
 
-            <p id="head">&lt;head&gt;</p>
+          <div class="contenido" id="header">
+            <p>&lt;header&gt; El elemento de HTML Header representa un grupo de ayudas introductorias o de navegación. Puede contener algunos elementos de encabezado, pero también otros elementos como un logo, una sección que aglutine secciones de encabezados, una formulario de búsqueda o cosas parecidas.
+            </p>
+          </div>
 
-            <p id="header">&lt;header&gt;</p>
+          <div class="contenido" id="titulos">
+            <p>&lt;h1&gt; hasta &lt;h6&gt; elemento se suele utilizar para identificar la cabecera más importante en una página web, tiene predefinido estilos que van del h1 al h6.</p>
+          </div>
 
-            <p id="titulos">&lt;h1&gt; hasta &lt;h6&gt;</p>
+          <div class="contenido" id="parrafo">
+            <p>&lt;p&gt; elemento es el apropiado para distribuir el texto en párrafos.
+            </p>
+          </div>
 
-            <p id="parrafo">&lt;p&gt;</p>
+          <div class="contenido" id="script">
+            <p>&lt;script&gt; permite la inserción de códigos script, como puede ser JavaScript en un documento web del lado del cliente.
+            </p>
+          </div>
 
-            <p id="script">&lt;script&gt;</p>
+          <div class="contenido" id="link">
+            <p>&lt;a&gt; crea un enlace a otras páginas de internet, archivos o ubicaciones dentro de la misma página, direcciones de correo, o cualquier otra URL. Se debe usar el atributo "href=" para determinar la ruta del link.
+            </p>
+          </div>
 
-            <p id="link">&lt;a&gt;</p>
+          <div class="contenido" id="listas">
+            <p>&lt;ul&gt;&lt;ol&gt; con estos elementos se crean listas "Unordered" y "Orderer", como su nombre en inglés indican que se crean listas desordenadas y listas ordenadas se utiliza luego de estas etiquetas el elemento &lt;li&gt; para el contenido de cada lista.
+            </p>
+          </div>
 
-            <p id="listas">&lt;ul&gt;&lt;ol&gt;</p>
+          <div class="contenido" id="comentario">
+            <p>&lt;!--Aqui se escribe el comentario--&gt;</p>
+          </div>
 
-            <p id="comentario">&lt;!--Aqui se escribe el comentario--&gt;</p>
-
+          <div class="contenido" id="imagen">
             <p id="imagen">&lt;img&gt; Se utiliza para incluir imagenes, debe incluir dentro un src con la referencia de la imagen, </p>
+          </div>
 
-            <p id="video">&lt;video&gt;</p>
+          <div class="contenido" id="video">
+            <p>&lt;video&gt; se utiliza para incrustar vídeos en un documento HTML o XHTML.
+            </p>
+          </div>
 
         </div>
 
     </div>
+</div>
+
+  <footer>
+    <!--agregar contenido para el footer-->
+  </footer>
+
 </body>
 
 </html>

@@ -5,39 +5,78 @@
     <meta charset="utf-8">
     <title>AcamicaWiki</title>
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
 </head>
 
 <body>
-    <!--Barra de navegacion lateral-->
-    <aside>
-        <div class="logo">
-            <img src="img/path4789.png">
+     <header class="header-principal">
+        <div class="contenedor-95vw">
+            <nav class="menu">
+                <ul>
+                    <li><a  href="index.html">HTML</a></li>
+                    <li><a href="css.html">CSS</a></li>
+                    <li class="active"><a href="git.html">GIT</a></li>
+                    <li><a href="#">extra 1</a></li>
+                    <li><a href="#">extra 2</a></li>
+                    <li><a href="#">extra 3</a></li>
+                    <li><a href="#">extra 4</a></li>
+                    <li><a href="#">extra 5</a></li>
+                    <li><a href="#">extra 6</a></li>
+                    <li><a href="#">extra 7</a></li>
+                </ul>
+            </nav>
+            <!--Barra de búsqueda a implementar funcionalidad-->
+            <!--Titulo y descripcion-->
+            <form class="buscador" action="ejecutar-la-busqueda" method="POST">
+                <div class="barra">
+                    <input type="search" placeholder="Escribí tu busqueda" id="busqueda" />
+                    <button type="submit">Buscar</button>
+                </div>
+            </form>
         </div>
-        <nav class="menu">
-            <ul>
-                <li><a href="index.html">HTML</a></li>
-                <li><a href="css.html">CSS</a></li>
-                <li><a href="git.html">Git</a></li>
-            </ul>
+    </header>
+    <div class="contenido">
+    <aside class="navegacion-lateral"><!--Barra de navegacion lateral-->
+        <div class="logo">
+            <img src="img/logoawiki.png">
+        </div>
+
+        <nav class="box indice">
+              <h2>Indice</h2>
+                <ul class="link-no-style">
+                    <li><a href="#doctype">Qué es Git</a></li>
+                    <li><a href="#html">Comandos básicos</a> </li>
+                    <li><a href="#meta">Creando repositorios locales</a></li>
+                    <li><a href="#div"> Repositorios remotos</a></li>
+                    <li><a href="#nav">Sincronizar</a></li>
+                    <li><a href="#form">Push</a></li>
+                    <li><a href="#head">Pull</a></li>
+                    <li><a href="#header">Pull request</a></li>
+                    <li><a href="#titulos">Código de colores</a></li>
+                    <li><a href="#parrafo">Pseudo elementos</a></li>
+                    <li><a href="#script">Pseudoclases</a></li>
+                </ul>
         </nav>
     </aside>
 
     <div class="principal">
-        <!--Barra de búsqueda a implementar funcionalidad-->
-        <form class="buscador" action="ejecutar-la-busqueda" method="POST">
-            <div class="barra">
-                <input type="search" id="busqueda" />
-                <button type="submit">Buscar</button>
-            </div>
-        </form>
         <!--Titulo y descripcion-->
-        <div class="descripcion">
-            <h1>Git</h1>
-            <!--Subnavegacion-->
-            <!--Contenido-->
+        <div class="box descripcion">
+            <h1>¿Qué es Git?</h1>
+            <div class="contenido">
+              <p>
+                Es un software de control de versiones diseñado por Linus Torvalds, pensando en la eficiencia y la confiabilidad del mantenimiento de versiones de aplicaciones cuando éstas tienen un gran número de archivos de código fuente.
+              </p>
+            </div>
         </div>
 
     </div>
+</div>
+
+<footer>
+  <!--agregar contenido para el footer-->
+</footer>
+
 </body>
 
 </html>

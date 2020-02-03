@@ -5,39 +5,80 @@
     <meta charset="utf-8">
     <title>AcamicaWiki</title>
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
 </head>
 
 <body>
-    <!--Barra de navegacion lateral-->
-    <aside>
-        <div class="logo">
-            <img src="img/path4789.png">
+     <header class="header-principal">
+        <div class="contenedor-95vw">
+            <nav class="menu">
+                <ul>
+                    <li><a  href="index.html">HTML</a></li>
+                    <li class="active"><a href="css.html">CSS</a></li>
+                    <li><a href="git.html">GIT</a></li>
+                    <li><a href="#">extra 1</a></li>
+                    <li><a href="#">extra 2</a></li>
+                    <li><a href="#">extra 3</a></li>
+                    <li><a href="#">extra 4</a></li>
+                    <li><a href="#">extra 5</a></li>
+                    <li><a href="#">extra 6</a></li>
+                    <li><a href="#">extra 7</a></li>
+                </ul>
+            </nav>
+            <!--Barra de búsqueda a implementar funcionalidad-->
+            <!--Titulo y descripcion-->
+            <form class="buscador" action="ejecutar-la-busqueda" method="POST">
+                <div class="barra">
+                    <input type="search" placeholder="Escribí tu busqueda" id="busqueda" />
+                    <button type="submit">Buscar</button>
+                </div>
+            </form>
         </div>
-        <nav class="menu">
-            <ul>
-                <li><a href="index.html">HTML</a></li>
-                <li><a href="css.html">CSS</a></li>
-                <li><a href="git.html">Git</a></li>
-            </ul>
+    </header>
+    <!--Barra de navegacion lateral-->
+    <div class="contenido">
+    <aside class="navegacion-lateral">
+        <div class="logo">
+            <img src="img/logoawiki.png">
+        </div>
+
+        <nav class="box indice">
+                <h2>Indice</h2>
+                <ul class="link-no-style">
+                    <li><a href="#doctype">Proposito de css</a></li>
+                    <li><a href="#html">Sintaxis</a> </li>
+                    <li><a href="#meta">Selectores</a></li>
+                    <li><a href="#div">Propiedades</a></li>
+                    <li><a href="#nav">transiciones</a></li>
+                    <li><a href="#form">Animaciones</a></li>
+                    <li><a href="#head">Especificidad</a></li>
+                    <li><a href="#header">Position</a></li>
+                    <li><a href="#titulos">Código de colores</a></li>
+                    <li><a href="#parrafo">Pseudo elementos</a></li>
+                    <li><a href="#script">Pseudoclases</a></li>
+                </ul>
         </nav>
     </aside>
 
     <div class="principal">
-        <!--Barra de búsqueda a implementar funcionalidad-->
-        <form class="buscador" action="ejecutar-la-busqueda" method="POST">
-            <div class="barra">
-                <input type="search" id="busqueda" />
-                <button type="submit">Buscar</button>
-            </div>
-        </form>
         <!--Titulo y descripcion-->
-        <div class="descripcion">
-            <h1>Css</h1>
+        <div class="box">
+            <h1>¿Qué es CSS?</h1>
             <!--Subnavegacion-->
-            <!--Contenido-->
+            <div class="contenido">
+            <p>Las siglas CSS (Cascading Style Sheets) significan «Hojas de estilo en cascada» y parten de un concepto simple pero muy potente: aplicar estilos (colores, formas, márgenes, etc...) a uno o varios documentos (generalmente documentos HTML, páginas webs) de forma masiva.
+              Se le denomina estilos en cascada porque se aplican de arriba a abajo (siguiendo un patrón denominado herencia que trataremos más adelante) y en el caso de existir ambigüedad, se siguen una serie de normas para resolverla.
+            </p>
+          </div>
         </div>
 
     </div>
+</div>
+
+<footer>
+  <!--agregar contenido para el footer-->
+</footer>
+
 </body>
 
 </html>

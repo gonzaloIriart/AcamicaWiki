@@ -1,76 +1,147 @@
-	* {
-	margin: 0;
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color:#105b63;
+}
+html{
+    background-image: url('../img/noise.jpg');
+}
+body{
+    color: #105b63;
+    margin: 5px; /*agregué esto para que se vieran los bordes y que la página no parezca "infinita"*/
+}
+p,h1,h2,h3{
+    margin-bottom: 1em;
 }
 
-body {
-	background-color: #0d627a ;
-	display: flex;
-	justify-content: space-around;
-	align-items: flex-start;
-	flex-wrap: wrap;
-	margin: 2em 1em;
-	font-family: 'Open Sans', sans-serif;
+.content{
+    margin-left: 3em;
+    margin-right: 3em;
 }
 
-aside {
-	padding: 1%;
-	border-radius: 1%;
-	width: 20%;
-	border-style: solid;
-	border-color: #cce490;
-	background-color: #0c907d;
-	height: 100vh;
-}
-.menu ul {	
-	padding: 0;
-}
+/*
+    COLORES:
+    #63A69F >=> Verde Claro de fondo
+    #105b63 >=> Verde Oscuro de acento y textos sobre fondos claros
+	#fffadc >=> Color para textos sobr efondo verde
 
-.menu ul li{
-	background-color: transparent;
-	box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.9);
-	list-style: none;	
-	margin: 10px 0px;
-	font-family: 'Roboto', sans-serif;
-	font-size: 1.7rem;
-	line-height: 150%;
-	padding-left: 20px;
-	border-radius: 2%;
-	text-align: center;
-}
+*/
 
-.menu ul li:hover{
-	box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.9);
-}
+/* Estilo de links que muestran los parrafos
+Quedan subrayados y se colorean al pasar el puntero para que se entiendan que son enlaces
+*/
+p a:hover{
+  transition: all 0.3s;
+	color: #fffadc;
+	background-color: #105b63;
 
-.menu ul li a{
+}
+/* Esta clase esta pensada para el caso que se necesite usar una lista de links en otros lugares y se quiera dar un estilo sencillo, ej. lista de recursos */
+.link-no-style a{
 	text-decoration: none;
-	display: block;
+	color: #fffadc;
 }
 
-.logo img {
-	width: 100%;
-	border-radius: 2%;
-	border: 3px solid #000;
+
+.header-principal{
+    background-color: #63A69F;
+    height: 10vh;
+    position: sticky;
+    top: 0;
+}
+footer{
+  padding: 10px;
+  background-color: #63A69F;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.principal {
-	width: 70%;
-	background-color: #0c907d;	
-	border-style: solid;
-	border-color: #cce490;
+/* se aplica flex al contenedor dentro de la cabecera proncipal dejando libre la clase contenedor 95vw para futuros usos */
+.header-principal .contenedor-95vw{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
 
-.buscador{
-	width: 90%;
-	margin: 1.5em 5%;
-	background-color: transparent;
-	display: flex;
-	justify-content: flex-end;
+/* Contenedor que centra elementos y ocupa 95 del viwport */
+.contenedor-95vw{
+    width: 95vw;
+    height: 100%; /*ayuda a centrar elementos verticalmente*/
+    margin: 0 auto;
+    /* background-color: #fff; */
 }
 
-.descripcion, .indice, .contenido {
-	box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.9);
-	margin: 1%;
+.menu ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.menu a{
+    padding: 0.5em;
+    display: inline-block;
+    text-decoration: none;
+    color: #fffadc;
+    transition: background-color 0.3s;
+}
+.menu a:hover{
+    background-color:#105b63;
+    border-radius: 3px;
+
+}
+
+.active{
+    background-color: #105b63;
+    border-radius: 3px;
+}
+
+.navegacion-lateral{
+    background-color: #63A69F;
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-right: 1%;
+    min-height:100vh;
+    width: 20vw;
+
+}
+
+
+
+
+.logo img{
+    width: 100%;
+    display: inline-block;
+}
+.indice{
+	max-height: 60%;
+	overflow: scroll;
+  overflow-x: hidden;
+}
+.indice ul{
+	list-style-type: none;
+}
+.indice a:hover{
+	text-decoration: #fffadc underline;
+}
+
+.contenido{
+    display: flex;
+    justify-content: space-between;
+
+}
+.principal{
+    width: 80%;
+    margin-left: 1%;
+
+}
+.box {
+	box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.3);
+	margin-top: 1%;
+
 	padding: 2%;
 	border-radius: 0.5%;
 }
